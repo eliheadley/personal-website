@@ -1,12 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body{
     background-color: #ECECEC;
+    min-height: 100vh;
+    min-width: 320px; /* Prevent layout from breaking on very small screens */
 }
 
-.header div{
-    width:33%;
-    float:left;
+.nav-bar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    background: #ECECEC;;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    border-bottom: 3px solid black; /* Adds a black line at the bottom */
 }
 
-#title{
-    
+.title{
+    font-size: 38px;
+    color: black;
+    font-weight: bold;
+}
+
+.personal-links a{
+    font-size: 24px;
+    color: blue;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 40px;
+}
+
+.content{
+    margin-top: 120px;
+
 }
