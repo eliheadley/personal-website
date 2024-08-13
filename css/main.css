@@ -5,9 +5,10 @@
 }
 
 body{
-    background-color: #ECECEC;
+    background-color: #ECECEC;;
     min-height: 100vh;
     min-width: 320px; /* Prevent layout from breaking on very small screens */
+
 }
 
 .nav-bar{
@@ -16,7 +17,7 @@ body{
     left: 0;
     width: 100%;
     padding: 20px 100px;
-    background: #ECECEC;;
+    background: #ECECEC;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -38,7 +39,14 @@ body{
     margin-left: 40px;
 }
 
+#picture img{
+    width:200px;
+    height: auto;
+    padding-left: 10px;
+}
+
 .content{
     margin-top: 120px;
 
 }
+
