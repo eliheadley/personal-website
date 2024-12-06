@@ -5,7 +5,7 @@
 }
 
 body{
-    background-color: #ECECEC;;
+    background-color: #ffffff;
     min-height: 100vh;
     min-width: 320px; /* Prevent layout from breaking on very small screens */
 
@@ -26,6 +26,7 @@ body{
 }
 
 .title{
+    margin-left: 3%;
     font-size: 38px;
     color: black;
     font-weight: bold;
@@ -33,20 +34,114 @@ body{
 
 .personal-links a{
     font-size: 24px;
-    color: blue;
+    color: black;
     font-weight: 500;
     text-decoration: none;
     margin-left: 40px;
 }
 
-#picture img{
-    width:200px;
-    height: auto;
-    padding-left: 10px;
+.personal-links a:hover{
+    color: rgb(56, 118, 253)
 }
 
 .content{
-    margin-top: 120px;
+    margin-top: 100px;
+    display: flex;
+    height: 100vh;
+}
 
+.content #personal{
+    margin-top: 5%;
+}
+
+.content #personal #icons{
+    display: flex;
+    margin-bottom: 2%;
+    margin-top: 2%;
+    margin-left: 30%;
+    flex-direction: row;
+}
+
+.content #personal #icons a{
+    color: black;
+    font-size: large;
+    color: black;
+    font-size: large;
+    margin-left: 16px;
+}
+
+.content #personal #icons a:hover{
+    color: rgb(56, 118, 253)
+}
+
+.content #personal img{
+    max-width: 60%;
+    height: auto;
+    margin-left: 20%;
+    border-radius: 15%;
+}
+
+.content #personal p{
+    margin-left: 20%;
+    margin-top: 2%;
+}
+
+.content #personal p{
+    margin-left: 20%;
+    margin-top: 2%;
+    font-size: medium
+}
+
+.content #personal-info{
+    flex: 0 0 30%;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    flex-direction: column;
+    align-content: space-between;
+}
+
+.content #interests{
+    width: 60%;
+    margin-top: 10%;
+}
+
+.content #interests p{
+    font-size: 24px;
+    margin-bottom: 2%;
+    font-weight: bold;
+}
+
+.content #interests i{
+    margin-top: 10%;
+    font-size: medium;
+}
+
+.content #affiliation{
+    margin-top: 10%;
+}
+
+.content #affiliation img{
+    max-width: 60%;
+    height: auto;
+    margin-left: 19%;
+}
+
+.content #affiliation p{
+    margin-left: 20%;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.content #professional-info {
+    flex: 1;
+    background-color: #ffffff; 
+    padding: 20px; 
+    overflow-y: auto; 
+}
+
+.content #professional-info{
+    line-height: 1.5;
 }
 
