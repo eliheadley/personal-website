@@ -135,13 +135,23 @@ body{
 }
 
 .content #professional-info {
-    flex: 1;
-    background-color: #ffffff; 
-    padding: 20px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: #ffffff;
     overflow-y: auto; 
 }
 
 .content #professional-info{
     line-height: 1.5;
+}
+
+.positions dd{
+    padding-left: 5%;
+}
+
+.department{
+    color: rgb(56, 118, 253);
+    text-decoration: none;
 }
 
