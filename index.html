@@ -1,97 +1,456 @@
 <!DOCTYPE html>
 <html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Eli Headley — Computer Vision Engineer</title>
+    <meta name="description"
+        content="Eli Headley is a computer vision engineer in Atlanta, GA, building and deploying deep learning systems at industrial scale.">
+    <meta name="author" content="Eli Headley">
+
+    <!-- Open Graph / social previews -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Eli Headley — Computer Vision Engineer">
+    <meta property="og:description"
+        content="Computer vision engineer in Atlanta, GA. Edge inference, model serving, and distributed systems at industrial scale.">
+    <meta property="og:image" content="resources/images/mountain_picture.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='22' fill='%230f172a'/><text x='50' y='50' font-family='Georgia,serif' font-size='52' font-weight='700' fill='%2338bdf8' text-anchor='middle' dominant-baseline='central'>EH</text></svg>">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,600;8..60,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
 <body>
-    <head>
-        <title>Eli Headley Portfolio</title>
-        <link rel="stylesheet" href="css/main.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-    </head>
+    <a class="skip-link" href="#main">Skip to content</a>
 
-    <!-- bar at the top of the page -->
-    <header class="nav-bar">
-        <p class="title">Eli Headley</p>
+    <header class="site-header" id="site-header">
+        <div class="wrap header-inner">
+            <a class="brand" href="#top">Eli&nbsp;Headley</a>
 
-        <nav class="personal-links">
-            <a href="resume/Eli_Headley_Resume_Fall_2023.pdf" target="_self">Resume</a>
-            <a href="https://github.com/eliheadley" target="_self">GitHub</a> 
-            <a href="https://www.linkedin.com/in/eli-headley" target="_self">LinkedIn</a>
-        </nav>
+            <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="primary-nav"
+                aria-label="Toggle navigation">
+                <span class="nav-toggle-bar"></span>
+                <span class="nav-toggle-bar"></span>
+                <span class="nav-toggle-bar"></span>
+            </button>
 
+            <nav class="primary-nav" id="primary-nav" aria-label="Primary">
+                <a href="#about">About</a>
+                <a href="#experience">Experience</a>
+                <a href="#projects">Projects</a>
+                <a href="#publications">Research</a>
+                <a href="#skills">Skills</a>
+                <a href="#contact">Contact</a>
+                <a class="nav-cta" href="resume/Eli_Headley_Resume.pdf" target="_blank" rel="noopener">Résumé</a>
+            </nav>
+        </div>
     </header>
 
-    </div>
+    <main id="main">
+        <!-- ---------- Hero ---------- -->
+        <section class="hero" id="top">
+            <div class="wrap hero-inner">
+                <div class="hero-text">
+                    <p class="eyebrow">Atlanta, Georgia</p>
+                    <h1>Eli Headley</h1>
+                    <p class="hero-role">Computer Vision Engineer at Georgia-Pacific</p>
+                    <p class="hero-summary">
+                        I build, test, and deploy deep learning systems at industrial scale — edge inference,
+                        model serving, and the distributed plumbing that keeps them running. Today that means a
+                        manufacturing safety platform live across <strong>70+ sites</strong> and
+                        <strong>500+ cameras</strong>.
+                    </p>
 
-    <div class="content">
-        <div id="personal-info">
-            <div id="personal">
-                <img src="resources/images/mountain_picture.jpg" alt="Picture of me in front of the Teton Mountains">
-                <div id="icons">
-                    <a href="https://www.instagram.com/eliheadley03/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-                    <a href="https://www.facebook.com/eli.headley.5/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
-                    <a href="https://orcid.org/my-orcid?orcid=0009-0008-6721-8342" target="_blank"><i class="fa-brands fa-orcid"></i></a>
-                    <a href="https://github.com/eliheadley" target="_blank"><i class="fa-brands fa-github"></i></a>
-                    <a href="https://www.linkedin.com/in/eli-headley" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    <div class="hero-actions">
+                        <a class="btn btn-primary" href="resume/Eli_Headley_Resume.pdf" target="_blank"
+                            rel="noopener">View résumé</a>
+                        <a class="btn btn-ghost" href="#contact">Get in touch</a>
+                    </div>
+
+                    <ul class="social" aria-label="Profiles">
+                        <li>
+                            <a href="https://github.com/eliheadley" target="_blank" rel="noopener" aria-label="GitHub"
+                                title="GitHub">
+                                <svg viewBox="0 0 24 24" aria-hidden="true">
+                                    <path
+                                        d="M12 .5A11.5 11.5 0 0 0 .5 12a11.5 11.5 0 0 0 7.86 10.92c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.53-1.34-1.29-1.7-1.29-1.7-1.06-.72.08-.7.08-.7 1.17.08 1.78 1.2 1.78 1.2 1.04 1.79 2.73 1.27 3.4.97.1-.76.4-1.27.73-1.56-2.55-.29-5.24-1.28-5.24-5.7 0-1.26.45-2.29 1.19-3.1-.12-.3-.52-1.47.11-3.05 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.79 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.58.24 2.75.12 3.04.74.82 1.18 1.85 1.18 3.11 0 4.43-2.69 5.4-5.26 5.69.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.55A11.5 11.5 0 0 0 23.5 12 11.5 11.5 0 0 0 12 .5Z" />
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/in/eli-headley" target="_blank" rel="noopener"
+                                aria-label="LinkedIn" title="LinkedIn">
+                                <svg viewBox="0 0 24 24" aria-hidden="true">
+                                    <path
+                                        d="M4.98 3.5A2.5 2.5 0 1 1 0 3.5a2.5 2.5 0 0 1 4.98 0ZM.25 8.25h4.5V24h-4.5V8.25Zm7.5 0h4.31v2.15h.06c.6-1.14 2.07-2.34 4.26-2.34 4.56 0 5.4 3 5.4 6.9V24h-4.5v-7.9c0-1.89-.03-4.32-2.63-4.32-2.63 0-3.03 2.06-3.03 4.18V24h-4.5V8.25Z" />
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://orcid.org/0009-0008-6721-8342" target="_blank" rel="noopener"
+                                aria-label="ORCID" title="ORCID">
+                                <svg viewBox="0 0 24 24" aria-hidden="true">
+                                    <path
+                                        d="M12 0a12 12 0 1 0 0 24 12 12 0 0 0 0-24ZM7.37 6.94a1.06 1.06 0 1 1 0 2.12 1.06 1.06 0 0 1 0-2.12Zm-.78 3.13h1.57v7.7H6.59v-7.7Zm3.53 0h3.02c2.87 0 4.14 2.05 4.14 3.85 0 1.96-1.53 3.85-4.13 3.85h-3.03v-7.7Zm1.57 1.42v4.86h1.36c1.94 0 2.61-1.47 2.61-2.43 0-1.57-1-2.43-2.66-2.43h-1.31Z" />
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="mailto:eliheadley@gmail.com" aria-label="Email" title="Email">
+                                <svg viewBox="0 0 24 24" aria-hidden="true">
+                                    <path
+                                        d="M2 4h20a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1Zm10 8.2 8.4-5.7H3.6L12 12.2ZM3 8.3V18h18V8.3l-8.44 5.73a1 1 0 0 1-1.12 0L3 8.3Z" />
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
                 </div>
-                <p><b>Current Position:</b> Data Engineer</p>
-                <p><b>Location:</b> Atlanta</p>
-                <p><b>Email:</b> eliheadley@gmail.com</p>
-            </div>
-            <div id="interests">
-                <p>Interests</p>
-                <i>Tech, Fitness, Food</i>
-            </div>
-            <div id="affiliation">
-                <p>Affiliation</p>
-                <img src="resources/images/ksu-logo.jpg" alt="Kennesaw State University logo">
-            </div>
-        </div>
 
-        <div id="professional-info">
-            <div id="about-me">
-                <h2>About Me</h2>
-                <hr>
-                <p id="bio">I am a recent Computer Science graduate from Kennesaw State University with a concentration in Artificial Intelligence. 
-                    I am now working full-time as an Associate Data Engineer at Georgia-Pacific LLC, where I focus on data modeling and deployment automation for the Computer Vision Team.
-                    My experience spans across software engineering, AI, and data science, with a strong passion for building scalable solutions that leverage data to drive impactful insights.
+                <aside class="hero-card" aria-label="At a glance">
+                    <h2 class="card-title">At a glance</h2>
+                    <dl class="facts">
+                        <dt>Role</dt>
+                        <dd>Computer Vision Engineer</dd>
+                        <dt>Company</dt>
+                        <dd><a href="https://www.gp.com/" target="_blank" rel="noopener">Georgia-Pacific</a></dd>
+                        <dt>Based in</dt>
+                        <dd>Atlanta, GA</dd>
+                        <dt>Education</dt>
+                        <dd>B.S. Computer Science, KSU — 4.0 GPA</dd>
+                        <dt>Focus</dt>
+                        <dd>Edge inference, model serving, distributed systems</dd>
+                    </dl>
+                    <div class="stats">
+                        <div class="stat">
+                            <span class="stat-num">70+</span>
+                            <span class="stat-label">sites in production</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-num">500+</span>
+                            <span class="stat-label">cameras served</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-num">99%</span>
+                            <span class="stat-label">fleet uptime</span>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </section>
+
+        <!-- ---------- About ---------- -->
+        <section id="about" class="section">
+            <div class="wrap">
+                <h2 class="section-title">About</h2>
+                <div class="about-grid">
+                    <div class="prose">
+                        <p>
+                            I'm a computer vision engineer in Atlanta. I graduated from Kennesaw State University in
+                            December 2024 with a B.S. in Computer Science and a 4.0, and I've spent my time since then
+                            taking deep learning models out of notebooks and into places where they have to keep working
+                            — factory floors, edge boxes, and networks that don't always cooperate.
+                        </p>
+                        <p>
+                            At Georgia-Pacific I work on a manufacturing safety application that grew from its first
+                            deployment to more than 70 sites and 500 cameras. My side of that is the production
+                            surface: serving models on NVIDIA Triton and DeepStream, containerized Python services on
+                            Kubernetes, event-driven integrations over NATS, and the monitoring and alerting that keeps
+                            the fleet at 99% uptime. An internal data science team owns training; I own everything that
+                            happens after.
+                        </p>
+                        <p>
+                            Before that I spent a year and a half as an undergraduate research assistant at KSU's
+                            College of Computing and Software Engineering, studying how eyelid occlusion from blinking
+                            affects iris recognition. That work turned into two published papers and a lasting habit of
+                            wanting to measure a thing before claiming it works.
+                        </p>
+                        <p>
+                            Outside of work I'm usually lifting, cooking, or building something that has no business
+                            being built on a Jetson. I'm always happy to talk shop —
+                            <a href="#contact">reach out</a>.
+                        </p>
+                    </div>
+
+                    <figure class="about-photo">
+                        <img src="resources/images/mountain_picture.jpg"
+                            alt="Eli Headley (right) standing on a frozen lake in front of the Teton Range" width="820"
+                            height="920" loading="lazy">
+                        <figcaption>Grand Teton National Park, Wyoming.</figcaption>
+                    </figure>
+                </div>
+            </div>
+        </section>
+
+        <!-- ---------- Experience ---------- -->
+        <section id="experience" class="section section-alt">
+            <div class="wrap">
+                <h2 class="section-title">Experience</h2>
+
+                <ol class="timeline">
+                    <li class="entry">
+                        <div class="entry-head">
+                            <h3>Computer Vision Engineer</h3>
+                            <span class="entry-date">Jan 2025 — Present</span>
+                        </div>
+                        <p class="entry-meta">
+                            <a href="https://www.gp.com/" target="_blank" rel="noopener">Georgia-Pacific</a>
+                            <span class="dot">·</span> Atlanta, GA
+                        </p>
+                        <ul class="bullets">
+                            <li>Helped grow a manufacturing safety application from first deployment to 70+
+                                manufacturing sites and 500+ cameras in production.</li>
+                            <li>Hardened the pipeline and built the monitoring and alerting that sustained 99% uptime
+                                across that fleet.</li>
+                            <li>Deployed production computer vision models on NVIDIA Triton Inference Server and
+                                DeepStream pipelines, partnering with an internal data science team that owns model
+                                training.</li>
+                            <li>Designed and maintained containerized Python services running on Kubernetes.</li>
+                            <li>Built event-driven integrations using NATS to move detection events between edge
+                                inference and downstream consumers.</li>
+                        </ul>
+                    </li>
+
+                    <li class="entry">
+                        <div class="entry-head">
+                            <h3>Undergraduate Research Assistant</h3>
+                            <span class="entry-date">Feb 2023 — May 2024</span>
+                        </div>
+                        <p class="entry-meta">
+                            <a href="https://www.kennesaw.edu/ccse/index.php" target="_blank" rel="noopener">Kennesaw
+                                State University — College of Computing and Software Engineering</a>
+                            <span class="dot">·</span> Marietta, GA
+                        </p>
+                        <ul class="bullets">
+                            <li>Ran occlusion experiments on frontal and off-angle iris images from ~100 subjects,
+                                measuring how eyelid occlusion from blinking affects recognition in both traditional
+                                Gabor-based and CNN-based (ResNet) pipelines.</li>
+                            <li>Established that training on occluded images largely offsets the accuracy loss, and that
+                                partial occlusion can improve performance on severe off-angle images by masking
+                                distortion-prone regions.</li>
+                            <li>Co-authored both resulting papers on a three-person research team.</li>
+                        </ul>
+                    </li>
+
+                    <li class="entry">
+                        <div class="entry-head">
+                            <h3>Resident Assistant</h3>
+                            <span class="entry-date">Aug 2022 — May 2024</span>
+                        </div>
+                        <p class="entry-meta">
+                            <a href="https://www.kennesaw.edu/housing/index.php" target="_blank" rel="noopener">Kennesaw
+                                State University — Housing and Residence Life</a>
+                            <span class="dot">·</span> Marietta, GA
+                        </p>
+                        <ul class="bullets">
+                            <li>Supported a community of 35 residents; planned community programming and resolved
+                                day-to-day conflicts.</li>
+                        </ul>
+                    </li>
+                </ol>
+            </div>
+        </section>
+
+        <!-- ---------- Projects ---------- -->
+        <section id="projects" class="section">
+            <div class="wrap">
+                <h2 class="section-title">Projects</h2>
+
+                <div class="cards">
+                    <article class="card">
+                        <div class="card-head">
+                            <h3>Entrio</h3>
+                            <span class="badge">In progress</span>
+                        </div>
+                        <p class="card-sub">Distributed computer vision pipeline · Mar 2026 — Present</p>
+                        <p>
+                            An edge inference application running YOLOv11 through NVIDIA DeepStream on a Jetson Orin
+                            Nano, with a multithreaded Python pipeline handling alert logic, recording, and publishing.
+                            A Go API service backed by PostgreSQL (schema migrations via Flyway) sits behind a React
+                            Native front end.
+                        </p>
+                        <ul class="tags">
+                            <li>YOLOv11</li>
+                            <li>DeepStream</li>
+                            <li>Jetson Orin Nano</li>
+                            <li>Go</li>
+                            <li>PostgreSQL</li>
+                            <li>React Native</li>
+                        </ul>
+                    </article>
+
+                    <article class="card">
+                        <div class="card-head">
+                            <h3>Decaf Interpreter</h3>
+                            <span class="badge">In progress</span>
+                        </div>
+                        <p class="card-sub">Bytecode virtual machine · Jan 2026 — Present</p>
+                        <p>
+                            A bytecode virtual machine and interpreter for the Decaf language, written in C — scanning,
+                            parsing, instruction dispatch, and memory management, built from scratch to understand
+                            what the runtimes I use every day are actually doing.
+                        </p>
+                        <ul class="tags">
+                            <li>C</li>
+                            <li>Compilers</li>
+                            <li>Virtual machines</li>
+                        </ul>
+                    </article>
+                </div>
+
+                <p class="section-foot">
+                    More on <a href="https://github.com/eliheadley" target="_blank" rel="noopener">GitHub</a>.
                 </p>
             </div>
-            <div id="education">
-                <h2>Education</h2>
-                <hr>
-                <dl class="schools">
-                    <dt><b>-&nbsp Kennesaw State University (KSU)</b></dt>
-                    <dd>&nbsp&nbsp (August 2021 - December 2024)</dd>
-                    <dd>&nbsp&nbsp Marietta, Georgia, USA</dd>
-                    <dd>&nbsp&nbsp Bachelors of Science in Computer Science</dd>
-                    <dd>&nbsp&nbsp <b>GPA:</b> 4.0/4.0</dd>         
-                </dl>
+        </section>
+
+        <!-- ---------- Publications ---------- -->
+        <section id="publications" class="section section-alt">
+            <div class="wrap">
+                <h2 class="section-title">Research &amp; Publications</h2>
+                <p class="section-lede">
+                    Peer-reviewed work on how blinking and eyelid occlusion affect iris recognition, from my time in
+                    KSU's biometrics research group.
+                </p>
+
+                <ol class="pubs">
+                    <li>
+                        <p class="pub-title">How Eye Blink Affects the Recognition Performance of Traditional Off-Angle
+                            Iris Images</p>
+                        <p class="pub-meta">
+                            <strong>Headley, E.</strong>, Tebor, D., &amp; Karakaya, M. (2024).
+                            <em>SoutheastCon 2024</em>, Atlanta, GA, pp. 1243–1249. IEEE.
+                        </p>
+                    </li>
+                    <li>
+                        <p class="pub-title">Impact of Blinking on Deep Learning Based Iris Recognition</p>
+                        <p class="pub-meta">
+                            Tebor, D., <strong>Headley, E.</strong>, &amp; Karakaya, M. (2024).
+                            <em>Proceedings of the 2024 ACM Southeast Conference (ACMSE '24)</em>, Marietta, GA. ACM.
+                        </p>
+                    </li>
+                </ol>
+
+                <p class="section-foot">
+                    Full record on <a href="https://orcid.org/0009-0008-6721-8342" target="_blank"
+                        rel="noopener">ORCID</a>.
+                </p>
             </div>
-            <div id="work-experience">
-                <h2>Work Experience</h2>
-                <hr>
-                <dl class="positions">
-                    <dt><b>Resident Assistant</b>, Marietta GA (August 2022 - May 2024):</dt>
-                    <dd><a href="https://www.kennesaw.edu/housing/index.php" target="_blank" class="department">Kennesaw State University - (HRL) Departmet of Housing and Residence Life</a></dd>
-                    <dd>
-                        I Accommodated 35 residents in total to ensure positive relationships in the community,
-                        planned and conducted community gatherings,
-                        and provided creative solutions to various types of dynamic problems.
-                    </dd>
-                    <dt><b>Research Assistant</b>, Marietta GA (February 2023 - May 2024):</dt>
-                    <dd><a href="https://www.kennesaw.edu/ccse/index.php" target="_blank" class="department">Kennesaw State University - (CCSE) College of Computing and Software Engineering</a></dd>
-                    <dd>
-                        Collaborated in a 3-member research team to evaluate and identify optimal iris recognition methods using diverse deep learning models.
-                        Additionaly I employed MATLAB, TensorFlow lite, and Python to conduct extensive research, data analysis, and experimentation in pursuit of accurate iris recognition outcomes.
-                        Finally, I contributed to the team's efforts in refining and implementing cutting-edge technologies, enhancing the project's success, and advancing iris recognition techniques.
-                    </dd>
-                    <dt><b>Data Engineer Intern/Co-Op</b>, Atlanta GA (May 2024 - December 2024):</dt>
-                    <dd><a href="https://www.gp.com/" target="_blank" class="department">Pacific LLC - (EAA) Department of Enterprise and Advanced Analytics</a></dd>
-                    <dd>*Description goes here*</dd>
-                </dl>
+        </section>
+
+        <!-- ---------- Skills + Education ---------- -->
+        <section id="skills" class="section">
+            <div class="wrap">
+                <h2 class="section-title">Skills &amp; Education</h2>
+
+                <div class="split">
+                    <div>
+                        <h3 class="sub-title">Technical skills</h3>
+                        <div class="skill-group">
+                            <h4>Languages</h4>
+                            <ul class="tags">
+                                <li>Python</li>
+                                <li>Go</li>
+                                <li>C</li>
+                                <li>Java</li>
+                                <li>SQL</li>
+                                <li>Terraform</li>
+                            </ul>
+                        </div>
+                        <div class="skill-group">
+                            <h4>ML &amp; computer vision</h4>
+                            <ul class="tags">
+                                <li>NVIDIA DeepStream</li>
+                                <li>Triton Inference Server</li>
+                                <li>YOLOv11</li>
+                                <li>TensorFlow Lite</li>
+                                <li>OpenCV</li>
+                            </ul>
+                        </div>
+                        <div class="skill-group">
+                            <h4>Infrastructure &amp; data</h4>
+                            <ul class="tags">
+                                <li>Docker</li>
+                                <li>Kubernetes</li>
+                                <li>AWS (S3, IAM, Lambda, ECS, CloudWatch)</li>
+                                <li>NATS</li>
+                                <li>PostgreSQL</li>
+                                <li>Neo4j</li>
+                            </ul>
+                        </div>
+                        <div class="skill-group">
+                            <h4>Hardware &amp; edge</h4>
+                            <ul class="tags">
+                                <li>NVIDIA Jetson Orin Nano</li>
+                                <li>JetPack</li>
+                                <li>RTSP</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h3 class="sub-title">Education</h3>
+                        <div class="edu">
+                            <img src="resources/images/ksu-logo.jpg" alt="Kennesaw State University logo" width="120"
+                                height="120" loading="lazy">
+                            <div>
+                                <h4>Kennesaw State University</h4>
+                                <p class="entry-meta">Bachelor of Science, Computer Science <span class="dot">·</span>
+                                    Dec 2024</p>
+                                <p class="entry-meta">Marietta, GA <span class="dot">·</span> GPA 4.0 / 4.0</p>
+                                <p class="coursework">
+                                    <strong>Relevant coursework:</strong> Computer Vision, Machine Learning, Linear
+                                    Algebra, Algorithm Analysis, Parallel &amp; Distributed Computing, Operating
+                                    Systems, Data Structures, Computer Organization &amp; Architecture.
+                                </p>
+                            </div>
+                        </div>
+
+                        <h3 class="sub-title">Outside of work</h3>
+                        <p class="prose">
+                            Weightlifting, cooking, and the mountains when I can get to them. I read a lot about
+                            systems programming and low-level performance, which is how the Decaf interpreter happened.
+                        </p>
+                    </div>
+                </div>
             </div>
+        </section>
+
+        <!-- ---------- Contact ---------- -->
+        <section id="contact" class="section section-contact">
+            <div class="wrap contact-inner">
+                <h2 class="section-title">Get in touch</h2>
+                <p class="section-lede">
+                    Open to talking about computer vision at the edge, production ML, or anything I've built here.
+                    Email is the fastest way to reach me.
+                </p>
+                <div class="hero-actions">
+                    <a class="btn btn-primary" href="mailto:eliheadley@gmail.com">eliheadley@gmail.com</a>
+                    <a class="btn btn-ghost" href="https://www.linkedin.com/in/eli-headley" target="_blank"
+                        rel="noopener">Connect on LinkedIn</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="wrap footer-inner">
+            <p>© <span id="year">2026</span> Eli Headley</p>
+            <nav aria-label="Footer">
+                <a href="resume/Eli_Headley_Resume.pdf" target="_blank" rel="noopener">Resume</a>
+                <a href="https://github.com/eliheadley" target="_blank" rel="noopener">GitHub</a>
+                <a href="https://www.linkedin.com/in/eli-headley" target="_blank" rel="noopener">LinkedIn</a>
+                <a href="https://orcid.org/0009-0008-6721-8342" target="_blank" rel="noopener">ORCID</a>
+                <a href="mailto:eliheadley@gmail.com">Email</a>
+            </nav>
         </div>
-    </div>
+    </footer>
+
+    <script src="scripts/main.js" defer></script>
 </body>
+
 </html>
